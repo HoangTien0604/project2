@@ -1,8 +1,9 @@
 <?php
-define("HOST", "localhost");
-define("DATABASE", "anomaly_db");
-define("USERNAME", "root");
-define("PASSWORD", "");
+define("HOST", getenv("DB_HOST"));
+define("DATABASE", getenv("DB_NAME"));
+define("USERNAME", getenv("DB_USER"));
+define("PASSWORD", getenv("DB_PASS"));
+
 
 try {
     $conn = new PDO(

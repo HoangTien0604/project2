@@ -1,12 +1,23 @@
+CREATE TYPE danger_level_enum AS ENUM (
+    'Thấp',
+    'Trung bình',
+    'Cao',
+    'Thảm họa'
+);
+
+CREATE TYPE anomaly_status_enum AS ENUM (
+    'Đang hoạt động',
+    'Đã vô hiệu'
+);
+
 CREATE TABLE anomalies (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     code VARCHAR(50) NOT NULL,
-    danger_level ENUM('Thấp', 'Trung bình', 'Cao', 'Thảm họa') NOT NULL,
-    description TEXT CHARACTER SET utf8mb4 NOT NULL,
-    status ENUM('Đang hoạt động', 'Đã vô hiệu') DEFAULT 'Đang hoạt động',
+    danger_level danger_level_enum NOT NULL,
+    description TEXT NOT NULL,
+    status anomaly_status_enum DEFAULT 'Đang hoạt động',
     reported_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-) CHARACTER SET utf8mb4
-  COLLATE utf8mb4_unicode_ci;
+);
 
 INSERT INTO anomalies (code, danger_level, description) VALUES
 (
