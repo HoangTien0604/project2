@@ -33,7 +33,7 @@ $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </head>
 <body>
 
-<h1>TRUNG TÂM KIỂM SOÁT DỊ THƯỜNG</h1>
+<h1>TRUNG TÂM KIỂM SOÁT DỊ TƯỢNG</h1>
 
 <form method="POST">
     <input type="text" name="code" placeholder="Mã dị thường (VD: ANOM-XXX)" required>
