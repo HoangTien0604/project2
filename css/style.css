@@ -1,0 +1,72 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: radial-gradient(circle at top, #1b1f2a, #0d0f16);
+    color: #e0e0e0;
+    width: 700px;
+    margin: 40px auto;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    color: #7dd3fc;
+}
+
+form {
+    background: #141826;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    background: #0f1320;
+    border: 1px solid #2a2f45;
+    color: #fff;
+    border-radius: 6px;
+}
+
+button {
+    padding: 12px;
+    width: 100%;
+    background: linear-gradient(135deg, #2563eb, #38bdf8);
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.anomaly {
+    background: #141826;
+    padding: 15px;
+    border-left: 4px solid #38bdf8;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+.anomaly small {
+    color: #94a3b8;
+}
+
+.badge {
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.active {
+    background: #dc2626;
+}
+
+.disabled {
+    background: #16a34a;
+}
+
+a {
+    color: #f87171;
+    text-decoration: none;
+}
